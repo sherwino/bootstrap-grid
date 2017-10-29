@@ -1,5 +1,8 @@
 # Bootstrap Grid
-A page just to show how Twitter's bootstrap handles ```.rows``` ```.columns``` ```.container```
+
+A little site that will how Twitter's bootstrap handles its ```.row``` ```.column``` ```.container``` ```.navbar``` ```.jumbotron``` classes.
+
+The site is over [HERE](https://sherwino.github.io/bootstrap-grid/) on GitHub Pages.
 
 ## A Little About Bootstrap
 Build responsive, mobile-first projects on the web with the world's most popular front-end component library.
@@ -76,14 +79,27 @@ Well those nice guys at Bootstrap already give you your HTML structure. So start
 </html>
 ```
 
-### normalize.css / reset.css / reboot.css
+### bootstrap-undo.css
 
-Use one of those please
+You wouldn't believe how difficult it was to undo some of the styling that Bootstrap uses.
+I had to fight with the ```.navbar``` classes to get the colors that I wanted. I just wanted a damn blue background, and some white text, IS THAT SO MUCH TO ASK. Bootstrap pretty much undid almost all of the styling I did on each class. 
+
+Reached a certain point, where I decided to take a moment and reflect on my choice to use Bootstrap as I searched through that super reliable search engine that we all use to look for answers, and I found [ONE](https://work.smarchal.com/twbscolor/css/e74c3cc0392becf0f1ffbbbc0)...thanks bruh.
 
 
 ### Markdown notes
 
-A good resource on how to write a nicely formatted readme.md [here](https://blog.ghost.org/markdown/)
+A good resource on how to write a nicely formatted readme.md [here](https://blog.ghost.org/markdown/).
+
+*Not that I write good notes, just had to look a lot of things up, cause it's not often us developers actually take the time to write a well documented readme.*
 
 
+
+### Screenshot
+Do you want to see what I did?
+![It's nice](https://screenshots.firefoxusercontent.com/images/2d981482-ee35-4f9f-b4c0-fba27c58318b.png)
+
+Actualy you could just go to the live version of the site and that would be better.
+
+https://sherwino.github.io/bootstrap-grid/
 
