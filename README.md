@@ -76,7 +76,7 @@ Well those nice guys at Bootstrap already give you your HTML structure. So start
 </html>
 ```
 
-### normalize.css / reset.css / rebot.css
+### normalize.css / reset.css / reboot.css
 
 Use one of those please
 

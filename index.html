@@ -1,38 +1,47 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Hello, world!</title>
+    <title>Bootstrap Grid</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <!-- My Custom CSS File -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- My Custom Generated CSS File to change the colors that come standard with Bootstrap -->
+    <!-- Special thanks to: Samuel Marchal https://work.smarchal.com/twbscolor/css/e74c3cc0392becf0f1ffbbbc0 for this -->
+    <link rel="stylesheet" href="./assets/css/bootstrap-undo.css">
+
   </head>
+
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Navbar</a>
+
+      <!-- Unmodified Bootstrap Nav -->
+    <nav class="blue navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">Bootstrap Grid</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-      
+      <!-- Unmodified Responsive/Scalable Nav -->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="#row">Full Width Row</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Dropdown
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#half">Half Width Row</a>
+                <a class="dropdown-item" href="#other">Other Fractions of a Row</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
+                <a class="dropdown-item" href="#footer">Footers</a>
               </div>
             </li>
             <li class="nav-item">
@@ -46,37 +55,39 @@
         </div>
       </nav>
       
-      <div class="container">
-        <header class="jumbotron">
+      <!-- Unmodified Jumbotron Container -->
+      <div class="content container-fluid">
+        <header class="spacer jumbotron">
                 <div class="jumbotron">
-                    <h1 class="display-3">Hello, world!</h1>
-                    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+                    <h1 class="display-3">Bootstrap 4 Beta!</h1>
+                    <p class="lead">Build responsive, mobile-first projects on the web with the world's most popular front-end component library. </p>
                     <hr class="my-4">
-                    <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+                    <p></p>Bootstrap is an open source toolkit for developing with HTML, CSS, and JS. Quickly prototype your ideas or build your entire app with our Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful plugins built on jQuery. </p>
                     <p class="lead">
-                        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                        <a class="btn btn-primary btn-lg" href="https://getbootstrap.com/" role="button">Learn more</a>
                     </p>
                 </div>
         </header>
 
-        <div class="row">
+        
+        <div class="row" id="full">
             <div class="col-md-12 full-width"><h2>FULL WIDTH</h2></div>
         </div>
 
-        <div class="row">
+        <div class="row" id="half">
             <div class="col-md-6 half-width"><h2>HALF WIDTH</h2></div>
             <div class="col-md-6 half-width"><h2>HALF WIDTH</h2></div>
         </div>
 
-        <div class="row">
+        <div class="row" id="other">
             <div class="col-md-4 third-width"><h2>THIRD WIDTH</h2></div>
             <div class="col-md-4 third-width"><h2>THIRD WIDTH</h2></div>
             <div class="col-md-4 third-width"><h2>THIRD WIDTH</h2></div>
         </div>
 
         <div class="row">
-            <div class="col-md-8 full-width"><h2>TWO THIRD</h2></div>
-            <div class="col-md-4 full-width"><h2>THIRD</h2></div>
+            <div class="col-md-8 two-third"><h2>TWO THIRD</h2></div>
+            <div class="col-md-4 third-width"><h2>THIRD</h2></div>
         </div>
 
         <div class="row">
@@ -96,10 +107,30 @@
                 <div class="col-md-10 ten"><h2>10  Column</h2></div>
                 <div class="col-md-1 one"><h2>1</h2></div>
         </div>
+</div>
 
 
-    <footer class="sticky-footer">
-        <span>Made with &hearts; by <a href="https://github.com/sherwino/">Sherwino</a></span>
+    <footer class="sticky-footer" id="footer">
+        <span>Made with &hearts; by Sherwino</span>
+        <!-- Wow looks like you have a whole lots of social media...sir -->
+        <!-- Unfortunately, I do 115th line of my code, unfortunately I do... -->
+        <span class="align-right">
+        <a href="https://github.com/sherwino" class="icons">
+            <i class="fa fa-github" aria-hidden="true"></i>
+          </a>
+          <a href="https://www.instagram.com/sherwigram/" class="icons">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+          </a>
+          <a href="https://www.last.fm/user/Viabobed" class="icons">
+            <i class="fa fa-lastfm" aria-hidden="true"></i>
+          </a>
+          </a>
+          <a href="https://www.linkedin.com/in/sherwino" class="icons">
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+          </a>
+
+          </a>
+        </span>
     </footer>
 
 
@@ -109,5 +140,8 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <!-- Cool Icons Bruh -->
+    <script src="https://use.fontawesome.com/6ba74b9513.js"></script>
+
   </body>
 </html>
