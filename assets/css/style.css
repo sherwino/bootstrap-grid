@@ -19,17 +19,9 @@ body {
     margin: 10px 0;
     text-align: center;
     border: 5px solid #fff;
-    /* box-sizing: border-box;     */
+
 }
 
-/* .blue {
-    background: #2e8cff;
-    color: #fff;
-} */
-
-.navbar-light .navbar-brand {
-    color: #fff;
-}
 
 .full-width {
     background: #64E15B;
